@@ -1,0 +1,23 @@
+{{template "header"}}
+
+{{template "navigation"}}
+
+<h1>Person Details</h1>
+
+{{if .}}
+<table>
+  <tr>
+    <td>Person Id</td>
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Last Updated</td>
+  </tr>
+  <tr>
+    <td>{{.PersonId}}</td>
+    <td>{{.FirstName}}</td>
+    <td>{{.LastName}}</td>
+    <td>{{.LastUpdated}}</td>
+  </tr>
+</table>
+{{end}}
+{{template "footer"}}
