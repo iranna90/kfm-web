@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/gorilla/mux"
 	"net/http"
 	"log"
 	"html/template"
@@ -18,14 +17,18 @@ func init() {
 }
 
 func main() {
-	route := mux.NewRouter()
-	route.HandleFunc("/index", handleIndex).Methods("GET")
-	route.HandleFunc("/person", handlePerson).Methods("GET")
+	fs := http.FileServer(http.Dir("public"))
+	http.Handle("/",fs)
+
+
+	http.HandleFunc("/index", handleIndex)
+	http.HandleFunc("/person", handlePerson)
 	log.Println("Starting server for front-end")
-	http.ListenAndServe(":5678", route)
+	http.ListenAndServe(":5678", nil)
 }
 
 func handleIndex(w http.ResponseWriter, r *http.Request) {
+	fmt.Println(r.URL.Path)
 	tpl.ExecuteTemplate(w, "index.gohtml", nil)
 }
 

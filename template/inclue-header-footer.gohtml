@@ -1,14 +1,39 @@
 {{define "header"}}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Hello</title>
+  <meta charset="ISO-8859-1">
+  <title>KMF Home</title>
 </head>
+<Link rel="StyleSheet" href="/css/layout.css">
 <body>
+
+<div id="header">
+  <h3>Karnataka Milk Federation</h3>
+</div>
+
+<!-- Navigation bar -->
+<div id="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Applications</a></li>
+    <li><a href="#">New Products</a></li>
+    <li><a href="#">Register</a></li>
+  </ul>
+</div>
 {{end}}
 
 
 {{define "footer"}}
+<div id="footer">
+  <ul>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Help</a></li>
+    <li><a href="#">Careers</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <P id="copyright">&copy; 2015 All rights reserved under abm-amro clearing</P>
+</div>
 </body>
+</html>
 {{end}}
