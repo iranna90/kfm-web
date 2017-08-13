@@ -1,164 +1,257 @@
 @CHARSET "ISO-8859-1";
 
 body {
-	background-color: #9c9f84;
-	margin: 0px;
-	font-family: Verdana, Georgio, Sarif, Ariel;
-	font-size: 15px;
+  background-color: #9c9f84;
+  margin: 0px;
+  font-family: Verdana, Georgio, Sarif, Ariel;
+  font-size: 15px;
 }
 
 #header {
-	background-color: darkgreen;
-	margin: 10px;
-	height: 90px;
-	border: 2px solid white;
-	border-radius: 5px;
-}
-
-#navbar {
-	background-color: #000;
-	margin: 10px;
-	height: 30px;
-	border: 2px solid white;
-	border-radius: 5px;
+  background-color: darkgreen;
+  margin: 10px;
+  height: 90px;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 .main {
-	background-color: #e5e4d7;
-	margin-bottom: 10px;
-	margin-left: 320px;
-	margin-right: 10px;
-	margin-top: 10px;
-	border: 2px solid white;
-	border-radius: 5px;
-	padding: 20px;
-	font-size: 110%;
-	height: 250px;
+  background-color: #e5e4d7;
+  margin-bottom: 10px;
+  margin-left: 320px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 110%;
+  height: 250px;
 }
 
 h1 {
-	font-size: 120%;
-	color: #ce282e;
+  font-size: 120%;
+  color: #ce282e;
 }
 
 .sideright {
-	background-color: #e5e4d7;
-	margin-bottom: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 0px;
-	border: 2px solid white;
-	border-radius: 5px;
-	padding: 20px;
-	font-size: 105%;
-	float: left;
-	width: 260px;
-	clear: left;
-	height: 250px;
+  background-color: #e5e4d7;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 105%;
+  float: left;
+  width: 260px;
+  clear: left;
+  height: 250px;
 }
 
 h2 {
-	font-size: 120%;
-	color: darkblue;
+  font-size: 120%;
+  color: darkblue;
+}
+
+.message {
+  font-size: medium;
+  font-family: "Apple Braille";
+  color: forestgreen;
 }
 
 #footer {
-	background-color: darkgreen;
-	height: 30px;
-	border: 2px solid white;
-	border-radius: 5px;
-	clear: both;
-	color: white;
-	font-weight: bold;
+  background-color: darkgreen;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  clear: both;
+  color: white;
+  font-weight: bold;
+}
+
+
+#navbar {
+  background-color: #000;
+  margin: 10px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 #navbar ul {
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-	text-align: center;
-	float: right;
-	margin: 0;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  float: right;
+  margin: 0;
 }
 
 #navbar ul li {
-	display: inline;
-	padding: 15px;
-	vertical-align: middle;
+  display: inline;
+  padding: 15px;
+  vertical-align: middle;
 }
 
 #navbar ul li a {
-	text-decoration: none;
-	padding: 5px 5px 5px 5px;
-	color: white;
-	vertical-align: middle;
-	color: white;
+  text-decoration: none;
+  padding: 5px 5px 5px 5px;
+  color: white;
+  vertical-align: middle;
+  color: white;
 }
 
 #navbar ul li a:HOVER {
-	background-color: white;
-	color: black;
-	margin: 0px;
-	padding: 5px 5px 5px 5px;
+  background-color: white;
+  color: black;
+  margin: 0px;
+  padding: 5px 5px 5px 5px;
 }
 
 #navbar ul li a:active {
-	background-color: white;
-	color: red;
+  background-color: white;
+  color: red;
 }
 
 h3 {
-	font-size: 200%;
-	font-weight: bold;
-	color: white;
-	text-align: center;
-	vertical-align: middle;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
+  font-size: 200%;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 #header p {
-	position: absolute;
-	top: 60px;
-	left: 840px;
-	color: white;
-	font-size: 120%;
+  position: absolute;
+  top: 60px;
+  left: 840px;
+  color: white;
+  font-size: 120%;
 }
 
 #footer ul {
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-	text-align: center;
-	float: right;
-	margin: 0;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  float: right;
+  margin: 0;
 }
 
 #footer ul li {
-	display: inline;
-	padding: 15px;
-	vertical-align: middle;
+  display: inline;
+  padding: 15px;
+  vertical-align: middle;
 }
 
 #footer ul li a {
-	text-decoration: none;
-	padding: 5px 5px 5px 5px;
-	color: white;
-	vertical-align: middle;
-	color: white;
+  text-decoration: none;
+  padding: 5px 5px 5px 5px;
+  color: white;
+  vertical-align: middle;
+  color: white;
 }
 
 #footer ul li a:HOVER {
-	background-color: white;
-	color: black;
+  background-color: white;
+  color: black;
 }
 
 #footer ul li a:active {
-	background-color: white;
-	color: red;
+  background-color: white;
+  color: red;
 }
 
 #copyright {
-	margin: 0px;
-	padding: 5px 0px 8px 8px;
+  margin: 0px;
+  padding: 5px 0px 8px 8px;
+}
+
+#navbarvertical {
+  width: 300px;
+  float: left;
+}
+
+#navbarvertical ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  float: right;
+  margin: 0;
+}
+
+#navbarvertical ul li a {
+  text-decoration: none;
+  font-family: Georgia, "Time New Roman";
+  background-color: #5c755e;
+  color: white;
+  display: block;
+  width: 100%;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 10px;
+  height: 20px;
+  line-height: 20px;
+}
+
+#navbarvertical ul li a:HOVER {
+  background-color: #d3d3d3;
+  color: black;
+}
+
+#navbarvertical ul li a:active {
+  background-color: white;
+  color: red;
+}
+
+.data {
+  text-decoration: none;
+  font-family: Georgia, "Time New Roman";
+  color: white;
+  display: block;
+  width: 70%;
+  text-align: center;
+  float: right;
+}
+
+.registrationtable {
+  color: white;
+  display: table;
+  padding: 15px;
+}
+
+.table_row {
+  display: table-row;
+}
+
+.table_lable_column {
+  display: table-cell;
+  width: 50px;
+  text-align: right;
+  padding: 2px;
+}
+
+.table_input_column {
+  display: table-cell;
+  width: 150px;
+  padding: 2px;
+}
+
+.button {
+  background-color: #e7e7e7;
+  border: 1px solid;
+  border-radius: 3px;
+  font: 700 13px Helvetica, Arial;
+  height: 30px;
+  line-height: 28px;
+  padding: 0 20px;
+  text-align: center;
+  margin-right: 10px;
+  box-sizing: border-box;
 }

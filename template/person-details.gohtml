@@ -1,23 +1,22 @@
-{{template "header"}}
+{{template "header" .}}
+<h1 align="center">{{.DataHeader}}</h1>
+{{template "verticalmenu"}}
 
-{{template "navigation"}}
+<div class="data">
 
-<h1>Person Details</h1>
-
-{{if .}}
-<table>
-  <tr>
-    <td>Person Id</td>
-    <td>First Name</td>
-    <td>Last Name</td>
-    <td>Last Updated</td>
-  </tr>
-  <tr>
-    <td>{{.PersonId}}</td>
-    <td>{{.FirstName}}</td>
-    <td>{{.LastName}}</td>
-    <td>{{.LastUpdated}}</td>
-  </tr>
-</table>
+{{if .OnlyMessage}}
+<h3 class="message">{{.Message}}</h3>
 {{end}}
+
+{{if .IsRegistration}}
+{{template "registration"}}
+{{end}}
+
+{{if .IsTransaction}}
+{{end}}
+
+{{if .IsPayments}}
+{{end}}
+</div>
+
 {{template "footer"}}

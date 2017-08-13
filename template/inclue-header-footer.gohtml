@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="ISO-8859-1">
-  <title>KMF Home</title>
+  <title>{{.Label}}</title>
 </head>
 <Link rel="StyleSheet" href="/css/layout.css">
 <body>
@@ -16,24 +16,15 @@
 <div id="navbar">
   <ul>
     <li><a href="/home">Home</a></li>
-    <li><a href="/persons">User Details</a></li>
+    <li><a href="/persondetails">User Details</a></li>
     <li><a href="/transactions">New Products</a></li>
-    <li><a href="/register">Register</a></li>
+    <li><a href="/register">Logout</a></li>
   </ul>
 </div>
 {{end}}
 
 
 {{define "footer"}}
-<div id="footer">
-  <ul>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Help</a></li>
-    <li><a href="#">Careers</a></li>
-    <li><a href="#">Contact Us</a></li>
-  </ul>
-  <P id="copyright">&copy; 2015 All rights reserved under abm-amro clearing</P>
-</div>
 </body>
 </html>
 {{end}}

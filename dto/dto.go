@@ -3,14 +3,12 @@ package dto
 import "time"
 
 type Person struct {
-	PersonId    string `json:"personId"`
 	FirstName   string `json:"firstName"`
 	LastName    string `json:"lastName"`
 	LastUpdated time.Time `json:"lastUpdated"`
 }
 
 type DailyMilkTransaction struct {
-	PersonId        string `json:"personId"`
 	NumberOfLiters  int8 `json:"numberOfLiters"`
 	TotalPriceOfDay int `json:"totalPriceOfTheDay"`
 	Balance         int64 `json:"balance"`
@@ -19,7 +17,6 @@ type DailyMilkTransaction struct {
 }
 
 type Payment struct {
-	PersonId        string `json:"personId"`
 	Amount          int64 `json:"amount"`
 	PaidTo          string `json:"paidTo"`
 	Day             time.Time `json:"day"`
